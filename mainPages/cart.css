@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Rubik", sans-serif !important;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #555 !important;
+}
+main {
+  background-color: #fff3bf;
+  font-size: 1.6rem;
+}
+.items-in-cart,
+.summary-text {
+  font-size: 1.8rem;
+  color: black;
+}
+
+.cart-product {
+  width: 100%;
+}
+
+.add-btn,
+.remove-btn {
+  width: 3rem;
+  height: 3rem;
+  border: none !important;
+  background-color: #ffd43b !important;
+}
+.fa-plus,
+.fa-minus {
+  color: black;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+}
+.checkout-btn-text {
+  font-size: 1.8rem;
+  align-self: center;
+  color: black;
+  font-weight: 500;
+}
+.checkout-btn {
+  border: none !important;
+  align-self: center;
+  background-color: #ffd43b !important;
+}
+
+.form-outline input {
+  font-size: 1.6rem;
+}
+
+/* MEDIA QUERIES */
+
+/* for Large Laptops */
+@media (max-width: 1024px) {
+  .checkout-btn-text {
+    font-size: 1.6rem;
+  }
+}
+/* for medium tablets */
+@media (max-width: 768px) {
+  .cart-product {
+    width: 50%;
+  }
+  .bg-image {
+    display: flex;
+    justify-content: center;
+  }
+  .checkout-button {
+    width: 100% !important;
+  }
+}

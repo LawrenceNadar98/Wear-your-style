@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+  <title>Wear your style</title>
+
+  <!-- css style sheet -->
+  <link rel="stylesheet" href="/mainPages/contact.css">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- font Awesome -->
+  <script src="https://kit.fontawesome.com/d513cda175.js" crossorigin="anonymous"></script>
+
+  <!-- JQUERY -->
+  <!-- FOR HEADER AND FOOTER TO LOAD DYNAMICALLY -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="jquery-3.3.1.min.js"></script>
+
+</head>
+
+
+<body>
+  <!-- ************************
+              HEADER
+       ************************ -->
+  <!-- HEADER IS DYNAMICALLY LOADING THROUGH LOADER.JS AND WITH THE HELP OF JQUERY -->
+  <div id="header">
+
+  </div>
+
+  <!-- ************************
+            CONTACT FORM
+       ************************ -->
+  <main>
+    <div class="container-fluid contact-form p-5">
+
+      <p class="contact-us text-center pt-5">Contact Us</p>
+
+      <div class="form contact mb-5">
+
+        <!-- CUSTOMER IMAGE  -->
+        <div class="contact-us-img col-lg-4">
+          <img src="/imgs/contact-page-img/contact.jpg" class="img-fluid customer-img" alt="">
+        </div>
+
+
+        <form action="input" class="input-form w-100" action="#">
+
+          <!-- NAME INPUT  -->
+          <div class="name-input">
+            <label class="name" for="full-name">Name:</label>
+            <input class="full-name" type="text" placeholder="Enter your name">
+          </div>
+
+          <!-- EMAIL INPUT  -->
+          <div class="email-input ">
+            <label class="email-address" for="email">Email:</label>
+            <input class="email" type="email" placeholder="Enter your email">
+          </div>
+
+          <!-- MESSAGE INPUT  -->
+          <div class="text-input">
+            <label class="text" for="text">Message:</label>
+            <textarea class="message" cols="30" rows="6" placeholder="Enter your message"></textarea>
+          </div>
+
+
+          <button class="submit-button w-100 text-center">SUBMIT</button>
+
+        </form>
+
+      </div>
+    </div>
+
+  </main>
+
+
+
+  <!-- ************************
+            FOOTER
+       ************************ -->
+  <!-- FOOTER IS DYNAMICALLY LOADING THROUGH LOADER.JS AND WITH THE HELP OF JQUERY -->
+  <div id="footer">
+
+  </div>
+
+
+  <!-- LOADER.JS LOADS HEADER AND FOOTER  -->
+  <script src="/assets/loader.js"></script>
+
+  <!-- BOOTSTRAP SCRIPT -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</body>
+
+</html>

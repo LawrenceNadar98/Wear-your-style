@@ -1,0 +1,277 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif !important;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #555 !important;
+}
+.header {
+  background-color: #fff3bf;
+}
+.navbar {
+  background-color: #fff3bf !important;
+}
+
+.nav-item {
+  list-style-type: none;
+}
+
+/* brand Logo */
+.brand-text {
+  margin-left: 5rem;
+}
+
+.logo-brand {
+  margin-left: 5rem;
+}
+
+.logo {
+  height: 7rem;
+}
+
+/* search-input */
+.search-input {
+  width: 40%;
+}
+
+.search-form {
+  width: 40%;
+}
+
+input[type="search"] {
+  font-size: 1.8rem;
+}
+
+.search-box {
+  font-size: 1.6rem;
+  border-top-left-radius: 10rem !important;
+  border-bottom-left-radius: 10rem !important;
+}
+
+.search-box::placeholder {
+  font-size: 1.6rem;
+}
+
+.submit-btn {
+  border-radius: 0.8rem;
+  font-weight: 500;
+  font-size: 1.8rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-top-right-radius: 10rem !important;
+  border-bottom-right-radius: 10rem !important;
+  background-color: #ffd43b;
+}
+
+.submit-btn:hover {
+  background-color: #fcc419;
+}
+
+/* action */
+
+.login-btn {
+  border: none;
+  padding: 0.6rem 1.2rem;
+  background-color: #ffd43b;
+  border-radius: 0.8rem;
+
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.login-btn:hover {
+  background-color: #fcc419;
+}
+
+.fa-cart-shopping {
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+  color: #fcc419;
+}
+
+.action {
+  margin-right: 3rem;
+}
+
+.fa-cart-shopping:hover {
+  color: #fab005;
+}
+
+.cart-items {
+  height: 0.5rem;
+  width: 100%;
+  font-size: 1.4rem;
+  margin-left: 0.5rem;
+  background: #fab005;
+  padding: 0.4rem;
+  border-radius: 50%;
+}
+
+/**************************/
+/* NAVIGATION */
+/**************************/
+
+.navbar-nav {
+  gap: 3.8rem;
+}
+
+#women-nav,
+#men-nav {
+  font-size: 1.8rem;
+}
+
+.secondary-nav {
+  background-color: #fff9db !important;
+  padding: 0;
+}
+
+.dropdown-link {
+  font-size: 1rem;
+  text-decoration: none !important;
+  color: #444 !important;
+  font-weight: 500 !important;
+}
+
+.dropdown-menu {
+  padding: 0 1rem;
+}
+
+.dropdown-item {
+  font-size: 1.6rem !important;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  color: #555;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+/* Underline hover style */
+.underline {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.underline::before {
+  content: "";
+  position: absolute;
+  bottom: -0.2rem;
+  left: 0;
+  right: 0;
+  height: 0.2rem;
+  background: #f59f00;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.4s ease-in-out;
+}
+
+.underline:hover::before {
+  transform: scaleX(1);
+}
+
+.search-form {
+  justify-content: center;
+  gap: 0;
+}
+
+.search-form {
+  margin: 0 auto;
+}
+
+/* -------MEDIA QUERIES ------- */
+/* TABLETS */
+@media (max-width: 768px) {
+  .fa-cart-shopping {
+    margin-bottom: 1rem !important;
+  }
+  .action {
+    width: 100% !important;
+  }
+  .action-bar {
+    flex-direction: column !important;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .fa-cart-shopping {
+    margin: 0;
+  }
+}
+/* medium to large mobile */
+@media (max-width: 427px) {
+  .submit-btn {
+    font-size: 1.4rem;
+  }
+  .login-btn {
+    font-size: 1.4rem;
+  }
+  .fa-cart-shopping {
+    margin-bottom: 1rem !important;
+  }
+  .search-form {
+    width: 60%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .logo-brand {
+    margin-left: -3rem;
+  }
+  .navbar-nav {
+    gap: 3rem;
+  }
+  .dropdown-menu {
+    margin-right: 5rem;
+  }
+
+  .dropdown-item {
+    padding: 0 0.3rem !important;
+  }
+  .secondary-nav {
+    padding-right: 2.5rem !important;
+    padding-left: 2.5rem !important;
+  }
+}
+/* small mobile */
+@media (max-width: 320px) {
+  .nav-text {
+    font-size: 1.6rem !important;
+  }
+  #women-nav,
+  #men-nav {
+    font-size: 1.6rem;
+  }
+  .search-form {
+    width: 80%;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  .logo-brand {
+    margin-left: -3rem;
+  }
+  .navbar-nav {
+    gap: 1.1rem;
+    font-size: 2rem;
+  }
+  .dropdown-menu {
+    margin-right: 5rem;
+  }
+
+  .dropdown-item {
+    padding: 0 0.3rem !important;
+  }
+  .secondary-nav {
+    padding-right: 2.5rem !important;
+    padding-left: 2.5rem !important;
+  }
+}
